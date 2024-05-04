@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap 4 CSS-CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33741297-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-33741297-1');
+    </script>
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background-color: dimgrey;
+        }
+    </style>
+    <title>gab9.com/vue/index.html</title>
+</head>
+
+
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logoeye.png" alt="Logo" style="width:100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="poster.html">POSTER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="3d.html">3D MODELING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="draw.html">DRAW SKETCH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ill.html">ILLUSTRATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cover.html">COVER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">PACKAGE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booths.html">BOOTHS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">VIDEO EDITING</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <a href="ill.html"> <img src="http://gab9.com/bt4/images/main/c1.jpg" alt="HalloweenCutie"
+                            width="1100" height="500"></a>
+                    <div class="carousel-caption">
+                        <h3>Halloween Cutie</h3>
+                        <p>Create by SAI & Wacom</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="3d.html"><img src="http://gab9.com/bt4/images/main/c4.jpg" alt="New York" width="1100"
+                            height="500"></a>
+                    <div class="carousel-caption">
+                        <h3>3D Modeling</h3>
+                        <p>用Sketchup軟件加V-ray算圖</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="poster.html"><img src="http://gab9.com/bt4/images/main/c3.jpg" alt="Poster" width="1100"
+                            height="500"></a>
+                    <div class="carousel-caption">
+                        <h3>Posters</h3>
+                        <p>過住一大堆海報設計作品,有公司的,有幫朋友的,亦有Freelance Jobs</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="booths.html"><img src="http://gab9.com/bt4/images/main/c2.jpg" alt="New York" width="1100"
+                            height="500"></a>
+                    <div class="carousel-caption">
+                        <h3>Booths</h3>
+                        <p>一些在公司的展示灘位設計</p>
+                    </div>
+                </div>
+               
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+
+        <!-- Vue -->
+        <div id="ok1">
+            <div class="card-deck">
+                <div class="card mt-4" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    <img class="card-img-top" v-bind:src="http://gab9.com/bt4/images/main/design1.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">肥仔-梁業(ERROR)</h4>
+                        <p class="small">素來都有留意ERROR呢隊姐合，最初時覺得騎呢冇料，但睇了"花姐遊"之後，對佢地完全改觀，還有預感佢地會改變娛樂節目的套路，結果"自肥企劃"後不負各人的祈望;肥仔係我覺得很有才華的一個，讚!!</p>
+                        <a href="draw.html" class="btn btn-primary">GO ></a>
+                    </div>
+                </div>
+                <div class="card mt-4" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    <img class="card-img-top" v-bind:src="http://gab9.com/bt4/images/main/design1.png">
+                    <div class="card-body">
+                        <h4 class="card-title">電繪</h4>
+                        <p class="small">用日式電繪方式的演繹角色或設定，無論觀賞或追求的技巧都係我的最愛，不竟全世界的人，由細至大都係受日本的動漫文化或作品薰陶，甚至很多荷里活電影作品都改自日本動漫和點名向某些動漫作品致敬。</p>
+                        <a href="ill.html" class="btn btn-warning">GO ></a>
+                    </div>
+
+                </div>
+                <div class="card mt-4" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
+                    <img class="card-img-top" v-bind:src="http://gab9.com/bt4/images/main/design3.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Astro Boy 鉄腕アトム</h4>
+                        <p class="small">阿童木「Astro」詞語源自英語「Atom」，意即「原子」，於1952年至1968年首次於光文社的《少年》漫畫雜誌連載，以那年代來講，造型十分前衛，手塚治虫首次發表作品，亦奠定他在漫畫界一代宗師的寶座。</p>
+                        <a href="3d.html" class="btn btn-success">GO ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Bootstrap 4 JavaScript CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Vue_code -->
+    <script>
+         Vue.createApp({
+             data() {
+    
+               return {
+                    
+                    photo: '',
+                    title2: '',
+                    abstract2: '',
+                    photo2: '',
+                    title3: '',
+                    abstract3: '',
+                    photo3: ''
+
+
+                  };
+                 }
+            }).mount('#ok')
+    </script>
+
+
+
+</body>
+
+</html>
